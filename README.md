@@ -7,11 +7,11 @@ This is a supply system program for stores  for helping them handling their supp
 
 ## Usage
 
-```bash
-python -m venv myenv
-source myenv/bin/activate   
-pip install mysql-connector-python
-```
+
+- Create a virtual env named **myenv** by using **python -m venv myenv**
+- Activate the new virtual env by **source myenv/bin/activate** 
+- Install mysql-connector-python for handling SQL queries in Python program **pip install mysql-connector-python**
+
 
 ## Features
 
