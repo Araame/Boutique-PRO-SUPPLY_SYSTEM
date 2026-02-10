@@ -120,14 +120,18 @@ def output_in_mouvements_stock():
 
 
 def make_a_product_output():
-    """"""
-    cursor = connection.cursor()
-    id_product = int(input("Product id : "))
-    quantity = int(input("Quantity : "))
-    query = """UPDATE Products SET stock = stock - %s where id_product = %s"""
-    cursor.execute(query, (quantity, id_product,))
-    connection.commit()
-    print("Allocated")
+    """Save an output operation"""
+    try : 
+        cursor = connection.cursor()
+        id_product = int(input("Product id : "))
+        quantity = int(input("Quantity : "))
+        query = """UPDATE Products SET stock = stock - %s where id_product = %s"""
+        cursor.execute(query, (quantity, id_product,))
+        connection.commit()
+        print("Allocated")
+    except mysql.connector.errors.DatabaseError :
+        print("Not enough supply ! Try to recharge this product.")
+
 
 
 def menu():
