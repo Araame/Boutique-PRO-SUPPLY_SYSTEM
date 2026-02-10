@@ -1,2 +1,35 @@
 # Boutique-PRO-SUPPLY_SYSTEM
-This is a supply system program for stores and helping them handling their supplies using Python and MySQL.
+
+## Description
+
+This is a supply system program for stores  for helping them handling their supplies using Python and MySQL for the database.
+
+
+## Usage
+
+```bash
+python -m venv myenv
+source myenv/bin/activate   
+pip install mysql-connector-python
+```
+
+## Features
+
+- Feature 1 : add a new category
+- Feature 2 : show all categories
+- Feature 3 : add a product
+- Feature 4 : show product's list
+- Feature 5 : Show products that have supplies under 5
+- Feature 6 : Make an output (if a product is used, you can save this operation into Mouvements_Stock)
+- Feature 7 : Show all inputs
+- Feature 8 : Show all outputs 
+
+
+
+
+
+## Contact
+
+Arame DIENG
+
+Project Link: [https://github.com/Araame/Boutique-PRO-SUPPLY_SYSTEM](https://github.com/Araame/Boutique-PRO-SUPPLY_SYSTEM)
